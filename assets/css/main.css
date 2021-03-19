@@ -23,7 +23,9 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	font-family: 'Roboto Condensed', sans-serif;
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -1616,6 +1618,10 @@ input, select, textarea {
 			margin-bottom: 0;
 		}
 
+
+		::marker {
+			content: none;
+		}
 /* Button */
 
 	input[type="button"],
@@ -1994,9 +2000,15 @@ input, select, textarea {
 
 	.icon {
 		text-decoration: none;
-		position: relative;
 		text-decoration: none;
-	}
+
+}
+.icon2 {
+	text-decoration: none;
+	transform: translateX(47rem);
+
+}
+
 
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
@@ -2064,11 +2076,11 @@ input, select, textarea {
 				}
 
 			.icon.featured.alt2 {
-				background-color: #827a7c;
+				background-color: #c49711;
 			}
 
 				.icon.featured.alt2:after {
-					border-top-color: #827a7c;
+					border-top-color: #c49711;
 				}
 
 /* Page Wrapper */
@@ -2189,7 +2201,7 @@ input, select, textarea {
 
 
 	#banner {
-		background: #000000 url("../../images/can.jpeg");
+		background: #000000 url("../../images/background.jpg");
 		background-size: 100% 100%;
 		background-repeat: repeat;
 		text-align: center;
@@ -2199,7 +2211,7 @@ input, select, textarea {
 	}
 
 		#banner header {
-			background-color: rgba(255, 255, 255, 0.98);
+			background-color: rgba(255, 255, 255, 0.94);
 			display: inline-block;
 			padding: 2.5em 5em;
 			border-radius: 5px;
@@ -2726,6 +2738,11 @@ input, select, textarea {
 /* Small */
 
 	@media screen and (max-width: 736px) {
+
+		.icon2 {
+			transform: translateX(3.7rem);
+
+		}
 
 		/* Basic */
 
