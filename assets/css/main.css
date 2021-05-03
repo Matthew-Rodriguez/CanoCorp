@@ -1997,6 +1997,15 @@ input, select, textarea {
 					}
 
 /* Icons */
+html {
+	scroll-behavior: smooth;
+}
+
+
+.ptag:hover {
+	color: rgba(236, 13, 13, 0.85) !important;
+	scale: 1.05 !important;
+}
 
 	.icon {
 		text-decoration: none;
